@@ -56,9 +56,10 @@ html{
 }
 .Header-box img{
     position: relative;
-    top: 10px;
+    top: 0px;
     left: 40px;
-    height: 135px;
+    height: 125px;
+    width: 236.19px;
     border-radius: 5px 5px 5px 5px;
     -webkit-box-shadow: 0 4px 6px -6px #222, 4px 0 6px -6px #222, 0 -4px 6px -6px #222, -4px 0 6px -6px #222;
     -moz-box-shadow: 0 4px 6px -6px #222, 4px 0 6px -6px #222, 0 -4px 6px -6px #222, -4px 0 6px -6px #222;
@@ -66,14 +67,17 @@ html{
 }
 
 .Browser-container.shrink .Header-box {
-    height: 90px;
+    height: 80px;
     width: 100%;
+    transition: height 0.3s ease;
   }
   
-  .Browser-container.shrink .Header-box img {
-    height: 125px; 
-    width: 255.08px;/* Altura reducida de la imagen al encoger */
-    top: -2px;  
+.Browser-container.shrink .Header-box img {
+    top: 0px;
+    height: 105px; 
+    width: 236.19px;
+    /* Altura reducida de la imagen al encoger */
+    transition: height 0.3s ease, width 0.3s ease;/* Altura reducida de la imagen al encoger */
 }
 .container-principal-language{
     display: flex;
@@ -97,18 +101,11 @@ html{
     width: 50px;
 }
 
-.container-language ul li{
+.other-languages{
     display: flex;
-    align-items: center;
-}
-.container-language ul li img{
-    margin: 0 10px 0px 10px;
-}
-
-.container-language .other-languages{
-    list-style: none;
+    flex-direction: column;
     position: absolute;
-    right: 30px;
+    right: 20px;
     top: 45px;
     background-color: white;
     width: 100px;
@@ -119,6 +116,11 @@ html{
 }
 .language-tab{
     cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.language-tab img{
+    margin-right:10px;
 }
 .container-text-emblem {
     display: flex;
@@ -159,5 +161,6 @@ html{
 }
 
 main{
-    padding: 50px;
+    margin-top: 50px;
 }
+
