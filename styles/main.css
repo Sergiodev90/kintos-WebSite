@@ -75,20 +75,50 @@ html{
     width: 255.08px;/* Altura reducida de la imagen al encoger */
     top: -2px;  
 }
-
-.container-languages span{
-    width: 13px;
-    height: 8px;
-    margin-left: 10px;
+.container-principal-language{
+    display: flex;
+}
+.container-principal-language span{
+    width: 15px;
+    height: 10px;
+    margin: 0 10px 0 40px;
     background-image: url("/assets/icons/down-arrow.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; 
-    align-self: center;
+    align-self: center; 
+    padding-top: 5px;
+    cursor: pointer;
 }
 
+.container-language img{
+    padding-left: 8px;
+    width: 50px;
+}
 
+.container-language ul li{
+    display: flex;
+    align-items: center;
+}
+.container-language ul li img{
+    margin: 0 10px 0px 10px;
+}
 
+.container-language .other-languages{
+    list-style: none;
+    position: absolute;
+    right: 30px;
+    top: 45px;
+    background-color: white;
+    width: 100px;
+    padding: 0 50px 20px 0 ;
+    -webkit-box-shadow: 0 4px 6px -6px #222, 4px 0 6px -6px #222, 0 -4px 6px -6px #222, -4px 0 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222, 4px 0 6px -6px #222, 0 -4px 6px -6px #222, -4px 0 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222, 4px 0 6px -6px #222, 0 -4px 6px -6px #222, -4px 0 6px -6px #222;
+}
+.language-tab{
+    cursor: pointer;
+}
 .container-text-emblem {
     display: flex;
     flex-direction: column;
@@ -99,7 +129,6 @@ html{
     margin-bottom: 0;
     font-size: 2rem;
     font-family: 'Cedarville Cursive',cursive;
-
 }
 
 .container-text-emblem h2 {
