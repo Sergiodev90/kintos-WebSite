@@ -13,6 +13,11 @@ html{
     font-family: 'Recursive', sans-seri;
 }
 
+.Browser-container{
+    top: -1px;
+    z-index: 1000;
+    position: sticky;
+}
 .Browser-container-contacts{
     height: 70px;
     display: flex;
@@ -25,7 +30,6 @@ html{
     height:60px;
     border-bottom: 4mm ridge rgba(255, 0, 9, .6);    padding: 5px 50px 5px;
     align-items: center;
-
 }
 
 .nav-contacts{
@@ -39,15 +43,40 @@ html{
 .Header-box{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     background-color: white;
-    height: 155px;
+    height: 105px;
     padding: 5px 50px 5px ;
     text-align: center;
     -webkit-box-shadow: 0 4px 6px -6px #222;
     -moz-box-shadow: 0 4px 6px -6px #222;
     box-shadow: 0 4px 6px -6px #222;
+    margin-bottom: 20px;
+    transition: height 0.3s ease;
 }
-.Browser-container-contacts span{
+.Header-box img{
+    position: relative;
+    top: 10px;
+    left: 40px;
+    height: 135px;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-box-shadow: 0 4px 6px -6px #222, 4px 0 6px -6px #222, 0 -4px 6px -6px #222, -4px 0 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222, 4px 0 6px -6px #222, 0 -4px 6px -6px #222, -4px 0 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222, 4px 0 6px -6px #222, 0 -4px 6px -6px #222, -4px 0 6px -6px #222;
+}
+
+.Browser-container.shrink .Header-box {
+    height: 90px;
+    width: 100%;
+  }
+  
+  .Browser-container.shrink .Header-box img {
+    height: 125px; 
+    width: 255.08px;/* Altura reducida de la imagen al encoger */
+    top: -2px;  
+}
+
+.container-languages span{
     width: 13px;
     height: 8px;
     margin-left: 10px;
@@ -68,14 +97,14 @@ html{
 
 .container-text-emblem h3 {
     margin-bottom: 0;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: 'Cedarville Cursive',cursive;
 
 }
 
 .container-text-emblem h2 {
     margin-top: 0;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .container-network{
@@ -94,4 +123,11 @@ html{
 .container-network p{
     font-size: 15px;
     color:gray ;
+}
+.container-text{
+    font-size: 50px;
+}
+
+main{
+    padding: 50px;
 }
