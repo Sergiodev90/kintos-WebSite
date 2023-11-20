@@ -12,14 +12,17 @@ html{
     font-size: 62.5%;
     font-family: 'Recursive', sans-seri;
 }
-
+body{
+    background-size: cover;
+    background-image: url(../assets/Images/machupichu.webp);
+}
 .Browser-container{
     top: -1px;
     z-index: 1000;
     position: sticky;
 }
 .Browser-container-contacts{
-    height: 70px;
+    height: 70vh;
     display: flex;
     width: 100%;
     background-color: white;
@@ -45,7 +48,7 @@ html{
     justify-content: space-around;
     align-items: center;
     background-color: white;
-    height: 105px;
+    height: 135px;
     padding: 5px 50px 5px ;
     text-align: center;
     -webkit-box-shadow: 0 4px 6px -6px #222;
@@ -55,73 +58,21 @@ html{
     transition: height 0.3s ease;
 }
 .Header-box img{
-    position: relative;
-    top: 0px;
-    left: 40px;
-    height: 125px;
-    width: 236.19px;
-    border-radius: 5px 5px 5px 5px;
+    width: 244px;
+    /* border-radius: 5px 5px 5px 5px;
     -webkit-box-shadow: 0 4px 6px -6px #222, 4px 0 6px -6px #222, 0 -4px 6px -6px #222, -4px 0 6px -6px #222;
     -moz-box-shadow: 0 4px 6px -6px #222, 4px 0 6px -6px #222, 0 -4px 6px -6px #222, -4px 0 6px -6px #222;
-    box-shadow: 0 4px 6px -6px #222, 4px 0 6px -6px #222, 0 -4px 6px -6px #222, -4px 0 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222, 4px 0 6px -6px #222, 0 -4px 6px -6px #222, -4px 0 6px -6px #222; */
 }
 
 .Browser-container.shrink .Header-box {
-    height: 80px;
-    width: 100%;
-    transition: height 0.3s ease;
+    height: 115px;
   }
+.Browser-container.shrink .Header-box img{
+    height: 115px;
+}
   
-.Browser-container.shrink .Header-box img {
-    top: 0px;
-    height: 105px; 
-    width: 236.19px;
-    /* Altura reducida de la imagen al encoger */
-    transition: height 0.3s ease, width 0.3s ease;/* Altura reducida de la imagen al encoger */
-}
-.container-principal-language{
-    display: flex;
-}
-.icon-arrow{
-    width: 15px;
-    height: 10px;
-    margin: 0 10px 0 40px;
-    background-image: url("../assets/icons/down-arrow.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; 
-    align-self: center; 
-    padding-top: 5px;
-    cursor: pointer;
-    color: #222;
-}
 
-.container-language img{
-    padding-left: 8px;
-    width: 50px;
-}
-
-.other-languages{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    right: 20px;
-    top: 45px;
-    background-color: white;
-    width: 100px;
-    padding: 0 50px 20px 0 ;
-    -webkit-box-shadow: 0 4px 6px -6px #222, 4px 0 6px -6px #222, 0 -4px 6px -6px #222, -4px 0 6px -6px #222;
-    -moz-box-shadow: 0 4px 6px -6px #222, 4px 0 6px -6px #222, 0 -4px 6px -6px #222, -4px 0 6px -6px #222;
-    box-shadow: 0 4px 6px -6px #222, 4px 0 6px -6px #222, 0 -4px 6px -6px #222, -4px 0 6px -6px #222;
-}
-.language-tab{
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-.language-tab img{
-    margin-right:10px;
-}
 .container-text-emblem {
     display: flex;
     flex-direction: column;
@@ -161,6 +112,64 @@ html{
 }
 
 main{
-    margin-top: 50px;
+    padding:0 16px;
+    margin:0 auto !important;
+    max-width: 1203px;
 }
 
+main p{
+    font-size: 50px
+}
+
+.sections{
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.3);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container-sections{
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+
+.icon-angle{
+    width: 100px;
+}
+
+.container-icons{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.container-img-principal{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.container-img-principal img{
+    width: 563.141px;
+    height: 338.344px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-top-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+    position: relative;
+}
+
+.sections h1{
+    font-size: 40px;
+    font-family: 'Cedarville Cursive',cursive;
+}
+
+.sections p{
+    font-size: 30px;
+    text-align:center;
+}
