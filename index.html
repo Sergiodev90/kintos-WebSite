@@ -9,6 +9,8 @@
     <link rel="icon" href="./assets/Images/logo.png" type="image/ x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" href="./styles/tablet.css">
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -35,11 +37,43 @@
             </div>
         </nav>
         <nav class="Header-box">
-                <img src="./assets/Images/logo.png" alt="logo-kinto">
-            <div class="container-text-emblem">
-                <h3>Pensar-Decidir-Actuar</h3>
-                <h2>la nuestra realidad migrante</h2>
-            </div>
+                <img class="logo-image" src="./assets/Images/logo.png" alt="logo-kinto">
+                <span class="icon-menu"></span>
+                <div class="container-text-emblem">
+                    <h3 class="text-emblem">Pensar-Decidir-Actuar</h3>
+                    <h2 class="text-emblem">la nuestra realidad migrante</h2>
+                </div> 
+            <div class="background-menu-mobile inactive">
+                <div class="mobile-menu  inactive">
+                    <div class="img-menu-mobile-container">
+                        <img src="./assets/icons/menu.png " alt="">
+                    </div>             
+                    <div class="container-social-networks-mobile ">
+                        <a href="kintosuyo.internacional@gmail.com">
+                        <div class="container-network-mobile"> 
+                            <p>kintosuyo.internacional@gmail.com</p>
+                            <img src="./assets/icons/gmail.webp" alt="Email"> 
+                        </div>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=393888816033">
+                        <div class="container-network-mobile">
+                            <p>+39 388 881 6033</p>
+                            <img src="./assets/icons/whatsapp.webp" alt="Whatsapp">
+                        </div>
+                    </a>
+                        <a href="https://www.facebook.com/KintoSuyo">
+                        <div class="container-network-mobile">
+                            <p>Kinto Suyo-torino</p>
+                            <img src="./assets/icons/facebook.webp" alt="Facebook"> 
+                        </div>
+                        </a>
+                    </div>  
+                    <div class="container-text-emblem-mobile">
+                        <h3 class="text-emblem-mobile">Pensar-Decidir-Actuar</h3>
+                        <h2 class="text-emblem-mobile">la nuestra realidad migrante</h2>
+                    </div>     
+                </div>
+              </div>
         </nav>
     </header>
     <main>
@@ -74,7 +108,7 @@
                     residente a Torino
                     e i bambini dell'Ande del Perú attraverso iniziative specifiche per il sostegno alla loro crescita ed educazione              
                 <div class="container-img-principal">
-                        <img class="img-division-territorial" src="./assets/Images/division-territorial-del-imperio-inca-los-suyos.jpg" alt="">
+                        <img class="img-division-territorial" src="./assets/Images/Inca_Empire_South_America.png" alt="">
                 </div>  
                 <div class="container-icons">
                     <img class="first-icon-white icon-angle" src="./assets/icons/angulo-en-blanco.png" alt="">
@@ -89,7 +123,7 @@
                 </div>
 
                 <h1>Come:</h1>
-                <div class="container-img-principal">
+                <div class="container-img-principal country-italy-peru">
                     <img src="./assets/Images/peru-italia-caricatura.png" alt="">
                 </div>
                 <p>L'associazione organizza corsi di lingua quechua (lingua del popolo Inka) che hanno l'obiettivo di fare conoscere il modo di vivere e pensare della popolazione andina: tradizione, gastronomia e il rapporto uomo e natura (la pachamama - madre terra).</p>
@@ -100,6 +134,43 @@
             </section>
         </section>
     </main>
+    <footer class="footer">
+        <div class="container-main-footer">
+            <div class="container-message">
+                <p>Promoviamo la solidarietà fra la popolazione peruviana e verso altre popolazioni presenti in città, attraverso iniziative mirate: ogni anno in occasione del Natale portiamo la cioccolata calda per le strade del Balon; organizziamo l'esposizione di prodotti peruviani, costumi regionali, cerimonie del saluto al Sole, manifestazione culturale per le feste del Perú.</p>
+            </div>
+
+            <div class="container-social-networks-footer">
+                <div class="container-footer">
+                <div class="container-indis">
+                    <img src="./assets/icons/infograita1-kinto-suyo-indios.png" alt="">
+                </div>
+                <p class="text-footer-networks">I nostri social network</p>
+                <div class="social-networks">
+                    <div class="social-n">
+
+                        <img src="./assets/icons/facebook.webp" alt="">
+                        <a href=""><p>Kinto Suyo-torino</p></a>
+                    </div>
+                    <div class="social-n">
+
+                        <img src="./assets/icons/gmail.webp" alt="">
+                    <a href=" "><p>kintosuyo.internacional@gmail.com</p></a>
+                    </div>
+                    <div class="social-n">
+
+                        <img src="./assets/icons/whatsapp.webp" alt="">
+                    <a href=""><p>+39 388 881 6033</p></a>
+                    </div>
+                </div>
+                <h6>Dove:</h6>
+                <div class="address">
+                    <p> la nostra sede operativa: Via Morgari 14 -10125 (Casa del Quartiere) Torino.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </footer>
     <script src="./src/styles.js"></script>
     <script src="./src/language.js"></script>    
 </body>

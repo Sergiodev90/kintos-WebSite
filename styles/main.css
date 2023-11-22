@@ -16,10 +16,45 @@ body{
     background-size: cover;
     background-image: url(../assets/Images/machupichu.webp);
 }
+
+@keyframes show{
+    from{
+        height: 135px;
+    }
+    to{
+        height:90px;
+    }
+}
+@keyframes show-Text{
+    from{
+        font-size: 4rem;
+    }
+    to{
+        font-size: 2rem;
+    }
+}
+
+
+.Header-box{
+    animation:enhance-header linear both;
+    view-timeline-name: --nav;
+    animation-timeline: scroll(root);
+    animation-name: show;
+    animation-range:0 300px;
+}
+.text-emblem{
+    animation:enhance-header linear both;
+    view-timeline-name: --textnav;
+    animation-timeline: scroll(root);
+    animation-name: show-Text;
+    animation-range: 0 400px;
+}
+
 .Browser-container{
     top: -1px;
     z-index: 1000;
     position: sticky;
+    width: 100%;
 }
 .Browser-container-contacts{
     height: 70vh;
@@ -39,7 +74,7 @@ body{
     display: flex;
     list-style:none;;
 }
-.nav-contacts li img{
+.nav-contacts img{
     width: 40px;
     margin: 40px;
 }
@@ -57,21 +92,14 @@ body{
     margin-bottom: 20px;
     transition: height 0.3s ease;
 }
-.Header-box img{
-    width: 244px;
-    /* border-radius: 5px 5px 5px 5px;
+.Header-box .logo-image{
+    height: inherit;
+    border-radius: 5px 5px 5px 5px;
     -webkit-box-shadow: 0 4px 6px -6px #222, 4px 0 6px -6px #222, 0 -4px 6px -6px #222, -4px 0 6px -6px #222;
     -moz-box-shadow: 0 4px 6px -6px #222, 4px 0 6px -6px #222, 0 -4px 6px -6px #222, -4px 0 6px -6px #222;
-    box-shadow: 0 4px 6px -6px #222, 4px 0 6px -6px #222, 0 -4px 6px -6px #222, -4px 0 6px -6px #222; */
+    box-shadow: 0 4px 6px -6px #222, 4px 0 6px -6px #222, 0 -4px 6px -6px #222, -4px 0 6px -6px #222;
 }
 
-.Browser-container.shrink .Header-box {
-    height: 115px;
-  }
-.Browser-container.shrink .Header-box img{
-    height: 115px;
-}
-  
 
 .container-text-emblem {
     display: flex;
@@ -81,13 +109,13 @@ body{
 
 .container-text-emblem h3 {
     margin-bottom: 0;
-    font-size: 2rem;
+    font-size: 4rem;
     font-family: 'Cedarville Cursive',cursive;
 }
 
 .container-text-emblem h2 {
     margin-top: 0;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .container-network{
@@ -156,14 +184,16 @@ main p{
 }
 .container-img-principal img{
     width: 563.141px;
-    height: 338.344px;
     margin-top: 50px;
     margin-bottom: 50px;
     border-top-left-radius: 75px;
     border-bottom-right-radius: 75px;
     position: relative;
 }
-
+.country-italy-peru img{
+    width: 1040.141px;
+    height: 600.344px;
+}
 .sections h1{
     font-size: 40px;
     font-family: 'Cedarville Cursive',cursive;
@@ -173,3 +203,95 @@ main p{
     font-size: 30px;
     text-align:center;
 }
+.footer{
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 40px;
+    /* background-image: linear-gradient(white ,rgba(255, 0, 0, 0.654),rgb(255, 0, 0) ); */
+    background-color: rgba(128, 128, 128, 0.765);
+}
+.container-message{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.container-message p{
+    font-size: 30px;
+    text-align: center;
+    max-width: 1203px;
+    text-align: center;
+}
+.container-social-networks-footer{
+    display: flex;
+    justify-content: center;
+    background-color:rgba(255, 0, 0, 0.83);
+}
+.container-footer{
+    border-top: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,50px);
+    grid-template-rows: 20px 50px 50px;
+    gap: 20px;
+    padding: 30px;
+    margin: 0 auto;
+
+}
+
+.container-main-footer{
+    margin: 0 auto;
+}
+.container-indis{
+    grid-column: 6;
+}
+.container-indis img{
+    width: 160px;
+}
+
+.social-networks{
+    display: flex;
+    grid-column-start: 10;
+    grid-column-end: 14;
+    grid-row: 2;
+    flex-direction: column;
+    gap: 10px;
+}
+.social-networks img{
+    width: 40px;
+    height: 40px;
+}
+.text-footer-networks{
+    grid-column-start: 10;
+    grid-column-end:14;
+    grid-row:1;
+    font-size:15px
+}
+
+.social-networks .social-n{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-networks .social-n a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.container-footer .address{
+    grid-column-start: 17;
+    grid-column-end: 21;
+}
+.container-footer h6{
+    grid-column-start: 17;
+    grid-column-end: 21;
+    font-size: 25px;
+
+}
+.address p{
+    font-size: 20px;
+    text-align: left;
+}
+
