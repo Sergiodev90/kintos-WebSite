@@ -9,6 +9,7 @@
         background-color: white;
         position: absolute;
         top: 0px;
+        right: 0px;
         flex-direction: column;
         padding: 30px;
         border-top: 1px solid black;
