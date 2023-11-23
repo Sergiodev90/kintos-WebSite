@@ -168,5 +168,12 @@
         right: -14px;
         bottom: 232px;
     } 
+    .img-inca{
+        width: 14%;
+        position: absolute;
+        left: -1%;
+        bottom:-3%;
+        transform: rotate(-23deg);
+    }
     
 }
