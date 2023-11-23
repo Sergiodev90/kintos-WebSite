@@ -16,7 +16,7 @@
     }
     .container-footer .address{
         grid-column-start: 11;
-        grid-column-end: 17;
+        grid-column-end: 15;
         grid-row: 2;
     }
     .country-italy-peru img{
@@ -24,8 +24,8 @@
     }
     .container-footer{
         display: grid;
-        grid-template-columns: repeat(11,50px);
-        grid-template-rows: 20px 50px 50px;
+        grid-template-columns: repeat(auto-fill,50px);
+        grid-template-rows: 20px 50px 30px 20px;
     }
     .address p{
         font-size: 15
@@ -64,4 +64,15 @@
         animation-name: show-Text;
         animation-range: 0 400px;
     }
+    .click-hand{
+        grid-column: 12;
+        grid-row:3;
+    }
+    .llama-img{
+        width:11%;
+        position: absolute;
+        right: -22px;
+        bottom: 232px;
+    }
 }
+

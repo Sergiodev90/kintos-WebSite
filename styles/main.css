@@ -290,11 +290,19 @@ main p{
     font-size: 35px;
     color: white;
 
+}.address{
+    display: flex;
 }
 .address p{
     font-size: 20px;
     text-align: left;
     color: white;
+    margin-top: 10px;
+    border-bottom: 1px solid black;
+}
+
+.address a{
+    text-decoration: none;
 }
 
 .background-menu-mobile-Father{
@@ -310,3 +318,19 @@ main p{
     z-index: 8 ;
     text-align: center;
 }
+
+.container-footer .click-hand{
+    width: 40px;
+    height: 40px;
+    grid-column: 12;
+    grid-row: 3;
+}   
+.llama-img{
+    width: 7%;
+    position: absolute;
+    right: -25px;
+    bottom: 232px;
+}
+
+
+
