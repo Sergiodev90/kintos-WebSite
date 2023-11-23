@@ -1,0 +1,67 @@
+@media(min-width:840px){
+    .container-indis{
+        grid-column: 2;
+    }
+    .text-footer-networks{
+        grid-column-start: 5;;
+    }
+    .social-networks{
+        grid-column-start: 5;
+        grid-column-end: 14;
+    }
+    .container-footer h6{
+        grid-column: 11;
+        grid-row: 1;
+
+    }
+    .container-footer .address{
+        grid-column-start: 11;
+        grid-column-end: 17;
+        grid-row: 2;
+    }
+    .country-italy-peru img{
+        width: 100%;
+    }
+    .container-footer{
+        display: grid;
+        grid-template-columns: repeat(11,50px);
+        grid-template-rows: 20px 50px 50px;
+    }
+    .address p{
+        font-size: 15
+        px;
+    }
+    @keyframes show{
+        from{
+            height: 135px;
+        }
+        to{
+            height:90px;
+        }
+    }
+    @keyframes show-Text{
+        from{
+            font-size: 4rem;
+        }
+        to{
+            font-size: 2rem;
+        }
+    }
+    
+    
+    .Header-box{
+        animation:enhance-header linear both;
+        view-timeline-name: --nav;
+        animation-timeline: scroll(root);
+        animation-name: show;
+        animation-range:0 300px;
+        position: sticky;
+    }
+    .text-emblem{
+        animation:enhance-header linear both;
+        view-timeline-name: --textnav;
+        animation-timeline: scroll(root);
+        animation-name: show-Text;
+        animation-range: 0 400px;
+    }
+}

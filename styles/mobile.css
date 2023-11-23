@@ -3,7 +3,7 @@
         overflow-x:hidden;
     }
 }
-@media (200px <= width <= 900px) {
+@media (200px <= width <= 830px) {
 
     .background-menu-mobile{
         background-color: white;
@@ -97,20 +97,20 @@
         
     }
     .sections p{
-        font-size: 15px;
+        font-size: 20px;
         margin-bottom: 20px;
     }
     .sections h1{
         font-size:25px;
     }
     .container-message p{
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .container-footer{
         border-top: 1px solid black;
         display: grid;
-        grid-template-columns: repeat(auto-fill,10px);
+        grid-template-columns: repeat(11,10px);
         grid-template-rows: 20px 50px;
         gap: 20px;
         padding: 30px;
@@ -136,12 +136,23 @@
         padding: 10px;
     }
     .container-footer h6{
-        grid-column: 8;
+        grid-column: 7;
         grid-row:1;
+        font-size: 20px;
     }
     .container-footer .address{
-        grid-column-start: 8;
-        grid-column-end:12;
+        grid-column-start: 7;
+        grid-column-end:11;
         grid-row: 2;
+    }
+
+    .address p{
+        font-size: 13px;
+    }
+    .container-img-principal img{
+        width: 100%;
+    }
+    .country-italy-peru img{
+        width: 150%;
     }
 }

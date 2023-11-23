@@ -1,4 +1,3 @@
-alert("esta es la nueva pagina")
 const aside_mobile = document.querySelector(".background-menu-mobile")
 const aside_mobile_second = document.querySelector(".mobile-menu")
 const icon_menu = document.querySelector(".icon-menu")

@@ -183,12 +183,12 @@ main p{
     position: relative;
 }
 .container-img-principal img{
-    width: 563.141px;
+    /* width: 563.141px; */
+    width: 60%;
     margin-top: 50px;
     margin-bottom: 50px;
     border-top-left-radius: 75px;
     border-bottom-right-radius: 75px;
-    position: relative;
 }
 .country-italy-peru img{
     width: 1040.141px;
@@ -225,25 +225,24 @@ main p{
 }
 .container-social-networks-footer{
     display: flex;
-    justify-content: center;
     background-color:rgba(255, 0, 0, 0.83);
+    place-content: center;
 }
 .container-footer{
     border-top: 1px solid black;
     display: grid;
-    grid-template-columns: repeat(auto-fill,50px);
+    grid-template-columns: repeat(12,50px);
     grid-template-rows: 20px 50px 50px;
     gap: 20px;
     padding: 30px;
     margin: 0 auto;
-
 }
 
 .container-main-footer{
     margin: 0 auto;
 }
 .container-indis{
-    grid-column: 6;
+    grid-column: 3;
 }
 .container-indis img{
     width: 160px;
@@ -251,8 +250,8 @@ main p{
 
 .social-networks{
     display: flex;
-    grid-column-start: 10;
-    grid-column-end: 14;
+    grid-column-start: 8;
+    grid-column-end: 12;
     grid-row: 2;
     flex-direction: column;
     gap: 10px;
@@ -262,8 +261,8 @@ main p{
     height: 40px;
 }
 .text-footer-networks{
-    grid-column-start: 10;
-    grid-column-end:15;
+    grid-column-start: 8;
+    grid-column-end:13;
     grid-row:1;
     font-size:25px;
     color:white;
@@ -282,12 +281,12 @@ main p{
 }
 
 .container-footer .address{
-    grid-column-start: 17;
-    grid-column-end: 21;
+    grid-column-start: 15;
+    grid-column-end: 19;
 }
 .container-footer h6{
-    grid-column-start: 17;
-    grid-column-end: 21;
+    grid-column-start: 15;
+    grid-column-end: 19;
     font-size: 35px;
     color: white;
 
