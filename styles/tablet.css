@@ -75,11 +75,11 @@
         bottom: 232px;
     }
     .img-inca{
-        width: 11%;
+        width: 15%;
         position: absolute;
-        left: -15px;
-        bottom: 45%;
-        transform: rotate(-23deg);
+        left: -60px;
+        bottom: -5%;
+
     }
 }
 

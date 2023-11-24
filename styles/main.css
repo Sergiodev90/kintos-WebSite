@@ -229,7 +229,7 @@ main p{
     place-content: center;
 }
 .container-footer{
-    border-top: 1px solid black;
+    border-top: 5px solid black;
     display: grid;
     grid-template-columns: repeat(12,50px);
     grid-template-rows: 20px 50px 50px;
@@ -298,7 +298,6 @@ main p{
     text-align: left;
     color: white;
     margin-top: 10px;
-    border-bottom: 1px solid black;
 }
 
 .address a{
@@ -332,10 +331,10 @@ main p{
     bottom: 232px;
 }
 .img-inca{
-    width: 7%;
+    width: 15%;
     position: absolute;
-    left: -77px;
-    bottom: 232px;
+    left: -60px;
+    bottom: -5%;
 }
 
 
