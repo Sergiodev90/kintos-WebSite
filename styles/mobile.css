@@ -88,7 +88,6 @@
     .container-img-principal img{
         margin-top: 50px;
         margin-bottom: 50px;
-        position: relative;
     }
     .country-italy-peru img{
         width: 321px;
@@ -162,7 +161,7 @@
     }  
     .llama-img{
         width: 12%;
-        position: absolute;
+        position: fixed;
         right: -14px;
         bottom: 232px;
     } 
