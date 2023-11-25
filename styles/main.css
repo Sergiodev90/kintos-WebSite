@@ -208,11 +208,12 @@ main p{
     background-color: white;
     margin: 0 auto;
     margin-top: 40px;
-    /* background-image: linear-gradient(white ,rgba(255, 0, 0, 0.654),rgb(255, 0, 0) ); */
     background-color: rgba(128, 128, 128, 0.765);
+
 }
 .container-message{
     padding: 20px;
+
     display: flex;
     justify-content: center;
     margin-bottom: 80px;
@@ -226,7 +227,10 @@ main p{
 .container-social-networks-footer{
     display: flex;
     background-color:rgba(255, 0, 0, 0.83);
+    background-image: linear-gradient(rgba(128, 128, 128, 0.765),rgba(128, 128, 128, 0.765) ,rgb(255, 0, 0) );
+
     place-content: center;
+    
 }
 .container-footer{
     border-top: 5px solid black;
@@ -333,7 +337,7 @@ main p{
 .img-inca{
     width: 15%;
     position: absolute;
-    left: -60px;
+    left: -70px;
     bottom: -5%;
 }
 
