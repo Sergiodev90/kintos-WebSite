@@ -88,8 +88,6 @@
     .container-img-principal img{
         margin-top: 50px;
         margin-bottom: 50px;
-        border-top-left-radius: 56px;
-        border-bottom-right-radius: 57px;
         position: relative;
     }
     .country-italy-peru img{
@@ -169,10 +167,10 @@
         bottom: 232px;
     } 
     .img-inca{
-        width: 16%;
+        width: 15%;
         position: absolute;
-        left: -6px;
-        bottom: -1%;
+        left: -60px;
+        bottom: -5%;
     }
     
 }

@@ -34,6 +34,14 @@ body{
     }
 }
 
+@keyframes shake{
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
 
 .Header-box{
     animation:enhance-header linear both;
@@ -187,8 +195,6 @@ main p{
     width: 60%;
     margin-top: 50px;
     margin-bottom: 50px;
-    border-top-left-radius: 75px;
-    border-bottom-right-radius: 75px;
 }
 .country-italy-peru img{
     width: 1040.141px;
@@ -208,6 +214,7 @@ main p{
     background-color: white;
     margin: 0 auto;
     margin-top: 40px;
+    background-image: linear-gradient(white ,rgba(0, 0, 0, 0.3),rgb(255, 0, 0) );
     background-color: rgba(128, 128, 128, 0.765);
 
 }
@@ -226,8 +233,7 @@ main p{
 }
 .container-social-networks-footer{
     display: flex;
-    background-color:rgba(255, 0, 0, 0.83);
-    background-image: linear-gradient(rgba(128, 128, 128, 0.765),rgba(128, 128, 128, 0.765) ,rgb(255, 0, 0) );
+    background-color:#b94a48;
 
     place-content: center;
     
@@ -329,15 +335,23 @@ main p{
     grid-row: 3;
 }   
 .llama-img{
-    width: 7%;
-    position: absolute;
+    width: 5%;
+    position: fixed;
     right: -25px;
     bottom: 232px;
 }
+.llama-img:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: finite;
+    cursor: pointer;
+  }
 .img-inca{
     width: 15%;
     position: absolute;
-    left: -70px;
+    left: -60px;
     bottom: -5%;
 }
 

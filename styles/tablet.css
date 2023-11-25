@@ -69,17 +69,16 @@
         grid-row:3;
     }
     .llama-img{
-        width:11%;
-        position: absolute;
+        width:7%;
+        position: fixed;
         right: -22px;
         bottom: 232px;
     }
     .img-inca{
         width: 15%;
         position: absolute;
-        left: -50px;
+        left: -60px;
         bottom: -5%;
-
     }
 }
 
