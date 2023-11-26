@@ -344,15 +344,9 @@ main p{
     animation: shake 0.5s;
   
     /* When the animation is finished, start again */
-    animation-iteration-count: infinite;
     cursor: pointer;
   }
-.img-inca{
-    width: 15%;
-    position: absolute;
-    left: -60px;
-    bottom: -5%;
-}
+
 
 
 
