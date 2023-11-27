@@ -1,6 +1,6 @@
 const aside_mobile = document.querySelector(".background-menu-mobile")
 const aside_mobile_second = document.querySelector(".mobile-menu")
-const icon_menu = document.querySelector(".icon-menu")
+const icon_menu = document.querySelector(".icon-menu-d")
 const icon_menu_aside = document.querySelector(".icon-menu-mobile")
 const background_mobile_gray = document.querySelector(".background-menu-mobile-Father")
 
@@ -22,6 +22,4 @@ function toggleAside(){
     aside_mobile_second.classList.add("inactive")
     background_mobile_gray.classList.add("inactive")
   }
-
 }
-

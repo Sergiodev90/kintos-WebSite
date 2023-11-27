@@ -89,7 +89,8 @@ body{
 }
 .Header-box{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: white;
     height: 135px;
@@ -101,6 +102,7 @@ body{
     margin-bottom: 20px;
     transition: height 0.3s ease;
 }
+
 .Header-box .logo-image{
     height: inherit;
     border-radius: 5px 5px 5px 5px;
@@ -109,7 +111,14 @@ body{
     box-shadow: 0 4px 6px -6px #222, 4px 0 6px -6px #222, 0 -4px 6px -6px #222, -4px 0 6px -6px #222;
 }
 
-
+.Header-box > a{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+.Header-box > a:hover{
+    color: #5c5a52;
+}
 .container-text-emblem {
     display: flex;
     flex-direction: column;
@@ -331,7 +340,7 @@ main p{
 .container-footer .click-hand{
     width: 40px;
     height: 40px;
-    grid-column: 12;
+    grid-column: 13;
     grid-row: 3;
 }   
 .llama-img{

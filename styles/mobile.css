@@ -18,6 +18,9 @@
         transition: all .5s;
         opacity: 2;
     }
+    .Header-box > p{
+        display: none;
+    }
     .img-menu-mobile-container img{
         width: 35px;
         height: 35px;
@@ -71,7 +74,7 @@
         justify-content: space-around;
         padding: 15px;
     }
-    .icon-menu{
+    .icon-menu-d{
         background-image: url(../assets/icons/menu-icon.png);
         background-position: center;
         background-repeat: no-repeat;
@@ -157,7 +160,8 @@
     .container-footer .click-hand{
         width: 40px;
         height: 40px;
-        grid-row: 1;
+        grid-row: 2;
+        grid-column: 13;
     }  
     .llama-img{
         width: 8%;
