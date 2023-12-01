@@ -102,7 +102,9 @@ body{
     margin-bottom: 20px;
     transition: height 0.3s ease;
 }
-
+.Header-box-other-sections{
+    margin-bottom: 90px;
+}
 .Header-box .logo-image{
     height: inherit;
     border-radius: 5px 5px 5px 5px;
@@ -112,13 +114,57 @@ body{
 }
 
 .Header-box > a{
+    letter-spacing: 2px;
     font-size: 25px;
     text-decoration: none;
     color: black;
+    position: relative;
+    padding-bottom: 10px;
 }
-.Header-box > a:hover{
+
+.Header-box > a:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-top: 10px;
+    height: 5px;
+    width: 100%;
+    background: dodgerblue;
+    /*animation from right to left*/
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}  
+.Header-box > a:hover:after{
     color: #5c5a52;
+    transform-origin: left;
+    transform: scaleX(1);
 }
+.Header-box > a.gallery-open:after,
+.Header-box > a.gallery-open:hover:after {
+  /* tus estilos para cuando está abierta la galería o cuando se hace hover aquí */
+  color: #5c5a52;
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.Header-box > a.home-open:after,
+.Header-box > a.home-open:hover:after {
+  /* tus estilos para cuando está abierta la galería o cuando se hace hover aquí */
+  color: #5c5a52;
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.Header-box > a.notices-open:after,
+.Header-box > a.notices-open:hover:after {
+  /* tus estilos para cuando está abierta la galería o cuando se hace hover aquí */
+  color: #5c5a52;
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+
 .container-text-emblem {
     display: flex;
     flex-direction: column;
@@ -340,7 +386,7 @@ main p{
 .container-footer .click-hand{
     width: 40px;
     height: 40px;
-    grid-column: 13;
+    grid-column: 12;
     grid-row: 3;
 }   
 .llama-img{
@@ -358,5 +404,40 @@ main p{
   }
 
 
+.container-main-photos{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container__tree__elements{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+.container-photo .img-photo{
+    width: 25vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media ((min-width:200px ) and (max-width:700px)) {
+    .Header-box-other-sections{
+        margin-bottom: 10px;
+    }
+    .container__tree__elements{
+        gap: 5px;
+    }
+    .container-main-photos{
+        gap: 5px;
+    }
+    .container-photo .img-photo{
+        width: 35vw;
+        height: 100%;
+        object-fit: cover;
+    }
 
 
+}

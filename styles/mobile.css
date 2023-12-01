@@ -160,8 +160,8 @@
     .container-footer .click-hand{
         width: 40px;
         height: 40px;
-        grid-row: 2;
-        grid-column: 13;
+        grid-row: 1;
+        grid-column: 12;
     }  
     .llama-img{
         width: 8%;

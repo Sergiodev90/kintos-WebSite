@@ -1,4 +1,4 @@
-@media(min-width:840px){
+@media(min-width:831px){
     .container-indis{
         grid-column: 2;
     }
@@ -76,6 +76,9 @@
         position: fixed;
         right: -22px;
         bottom: 232px;
+    }
+    .background-menu-mobile-Father{
+        display: none;
     }
 
 }
