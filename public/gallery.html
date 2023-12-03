@@ -18,7 +18,7 @@
         <nav class="Browser-container-contacts">
             <a href="mailto:kintosuyo.internacional@gmail.com" target="_blank">
                 <div class="Email container-network">
-                    <img src="../assets/icons/gmail.webp" alt="Email"> 
+                    <img src="./assets/icons/gmail.webp" alt="Email"> 
                     <p>kintosuyo.internacional@gmail.com</p>
                 </div>
             </a>
@@ -36,12 +36,12 @@
             </a>
             </div>
         </nav>
-        <nav id="number_1"class="Header-box">
+        <nav id="number_1"class="Header-box Header-box-other-sections">
                 <img class="logo-image" src="../assets/Images/logo.webp" alt="logo-kinto">
                 <span class="icon-menu-d"></span>
-                        <a href="../sections/index.html">INIZIO</a>
-                        <a href="../sections/gallery.html" >GALLERIA</a>
-                        <a class="notices-open" href="../sections/notices.html" >NOTIZIE</a>
+                        <a href="../public/index.html" id="HomeLink">INIZIO</a>
+                        <a class="gallery-open"  href="../public/gallery.html" id="galleryLink">GALLERIA</a>
+                        <a href="../public/notices.html" id="noticeLink">NOTIZIE</a>
 
                 <div class="container-text-emblem">
                     <h3 class="text-emblem">Pensar-Decidir-Actuar</h3>
@@ -51,7 +51,7 @@
             <div class="background-menu-mobile inactive">
                 <div class="mobile-menu  inactive">
                     <div class="img-menu-mobile-container">
-                        <img class="icon-menu icon-menu-mobile" src="./assets/icons/menu-icon.png " alt="Menu-icon-mobile">
+                        <img class="icon-menu icon-menu-mobile" src="../assets/icons/menu-icon.png " alt="Menu-icon-mobile">
                     </div>             
                     <div class="container-social-networks-mobile ">
                         <a href="kintosuyo.internacional@gmail.com">
@@ -85,7 +85,11 @@
             </div>
         </nav>
     </header>
-    <script src="../src/index.js"></script>
-
+    <main class="gallery-container" id = "galleryContainer">
+        <section class="slide-photo__container">  
+        </section>
+    </main>
+    <script  src="../src/index.js"></script>
+    <script src="../src/Create-photos-layout.js"></script>
     </body>
 </html>
