@@ -9,6 +9,15 @@ const images = [
     "/assets/Images/chacana-01.jpg",
     "/assets/Images/chacana-01.jpg",
     "/assets/Images/chacana-01.jpg",
+    "/assets/Images/chacana-01.jpg",
+    "/assets/Images/chacana-01.jpg",
+    "/assets/Images/chacana-01.jpg",
+    "/assets/Images/chacana-01.jpg",
+    "/assets/Images/chacana-01.jpg",
+    "/assets/Images/chacana-01.jpg",
+    "/assets/Images/chacana-01.jpg",
+    "/assets/Images/chacana-01.jpg",
+    "/assets/Images/chacana-01.jpg",
 ];
 
 // Crear elementos de imagen en la galería
