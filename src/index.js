@@ -26,17 +26,17 @@ function toggleAside(){
 
 // Función para abrir y cerrar la sección de la galería
 // Función para abrir y cerrar la sección de la galería
-function toggleSections() {
-  const galleryLink = document.getElementById("galleryLink");
-  const HomeLink = document.getElementById("HomeLink")
-  const NoticesLink = document.getElementById("noticeLink")
-  const body = document.body;
+// function toggleSections() {
+//   const galleryLink = document.getElementById("galleryLink");
+//   const HomeLink = document.getElementById("HomeLink")
+//   const NoticesLink = document.getElementById("noticeLink")
+//   const body = document.body;
 
-  // Agregar o quitar la clase 'gallery-open' al enlace y al cuerpo del documento
-  galleryLink.classList.toggle("gallery-open");
-  body.classList.toggle("gallery-open");
-  HomeLink.classList.toggle("home-open");
-  body.classList.toggle("home-open");
-  NoticesLink.classList.toggle("noticesLink");
-  body.classList.toggle("noticesLink");
-}
+//   // Agregar o quitar la clase 'gallery-open' al enlace y al cuerpo del documento
+//   galleryLink.classList.toggle("gallery-open");
+//   body.classList.toggle("gallery-open");
+//   HomeLink.classList.toggle("home-open");
+//   body.classList.toggle("home-open");
+//   NoticesLink.classList.toggle("noticesLink");
+//   body.classList.toggle("noticesLink");
+// }
