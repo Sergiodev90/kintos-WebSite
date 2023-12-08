@@ -39,9 +39,9 @@
         <nav id="number_1"class="Header-box">
                 <img class="logo-image" src="../assets/Images/logo.webp" alt="logo-kinto">
                 <span class="icon-menu-d"></span>
-                        <a href="../public/index.html">INIZIO</a>
-                        <a href="../public/gallery.html" >GALLERIA</a>
-                        <a class="notices-open" href="../public/notices.html" >NOTIZIE</a>
+                        <a href="../public/index.html" id="HomeLink">INIZIO</a>
+                        <a href="../public/gallery.html" id="galleryLink">GALLERIA</a>
+                        <a class="notices-open" href="../public/notices.html" id="noticeLink">NOTIZIE</a>
 
                 <div class="container-text-emblem">
                     <h3 class="text-emblem">Pensar-Decidir-Actuar</h3>
@@ -51,9 +51,23 @@
             <div class="background-menu-mobile inactive">
                 <div class="mobile-menu  inactive">
                     <div class="img-menu-mobile-container">
-                        <img class="icon-menu icon-menu-mobile" src="./assets/icons/menu-icon.png " alt="Menu-icon-mobile">
+                        <img class="icon-menu icon-menu-mobile" src="../assets/icons/menu-icon.png " alt="Menu-icon-mobile">
                     </div>             
                     <div class="container-social-networks-mobile ">
+
+                        <div class="section-nav-speed">
+                            <a href="../public/index.html" id="HomeLink-mobile">INIZIO</a>
+                            <a href="../public/gallery.html" id="galleryLink-mobile">GALLERIA</a>
+                            <a class="notices-open-mobile" href="../public/notices.html" id="noticeLink-mobile">NOTIZIE</a>
+                            <div class="container-contacts__menu-mobile">
+                                <a >CONTACTS</a>
+                                <img class="icon-menu-contacts" src="../assets/icons/arrow-drop-down-line.png" alt="">
+                            </div>
+                        </div>
+                        
+                        <hr>
+
+                        <div class="contacts-mobile-click inactive" >
                         <a href="kintosuyo.internacional@gmail.com">
                         <div class="container-network-mobile"> 
                             <img src="../assets/icons/gmail.webp" alt="Email"> 
@@ -75,7 +89,8 @@
                         
                         </div>
                         </a>
-                    </div>  
+                    </div> 
+                </div> 
                     <div class="container-text-emblem-mobile">
                         <h3 class="text-emblem-mobile">Pensar-Decidir-Actuar</h3>
                         <h2 class="text-emblem-mobile">la nuestra realidad migrante</h2>
@@ -87,11 +102,13 @@
     </header>
     <div class="loader">
         <div>
-           <h1>It's Building</h1>
+           <img src="../assets/Images/pudgy-pudgypenguin.gif" alt="">
         </div>
+            <div class="container-span">
             <span></span>
             <span></span>
             <span></span>
+        </div>
         </div>
     <script src="../src/index.js"></script>
 
