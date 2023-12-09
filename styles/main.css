@@ -387,10 +387,10 @@ main p{
     text-align: center;
 }
 
-.container-footer .click-hand{
+ .click-hand{
     width: 40px;
     height: 40px;
-    grid-column: 12;
+    grid-column: 17;
     grid-row: 3;
 }   
 .llama-img{
