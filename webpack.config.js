@@ -1,23 +1,39 @@
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: './src/index.js', // Ruta del archivo de entrada principal
+  mode: 'development', // o 'production'
+  entry: {
+    main: './src/index.js',
+    mobile: './styles/mobile.css',
+    tablet: './styles/tablet.css',
+    styles: './styles/main.css' // Agregamos main.css como una entrada
+  },
   output: {
-    filename: 'bundle.js', // Nombre del archivo de salida
-    path: path.resolve(__dirname, 'dist') // Carpeta de salida
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist')
   },
   module: {
     rules: [
       {
-        test: /\.js$/, // Aplicar regla a archivos JavaScript
-        exclude: /node_modules/, // Excluir la carpeta node_modules
+        test: /\.js$/,
+        exclude: /node_modules/,
         use: {
-          loader: 'babel-loader', // Usar Babel para transpilar el código
+          loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env'] // Configurar preset de Babel
+            presets: ['@babel/preset-env']
           }
         }
-      }
+      },
+      {
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader']
+      },
     ]
-  }
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: '[name].bundle.css'
+    })
+  ]
 };
