@@ -1,0 +1,274 @@
+/*!*********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./styles/mobile.css ***!
+  \*********************************************************************/
+@media (max-width: 900px){
+    body,html{
+        overflow-x:hidden;
+    }
+}
+@media (200px <= width <= 830px) {
+    @-webkit-keyframes slide-rotate-hor-top {
+        0% {
+          -webkit-transform: translateY(0) rotateX(0deg);
+                  transform: translateY(0) rotateX(0deg);
+        }
+        100% {
+          -webkit-transform: translateY(-90px) rotateX(-250deg);
+                  transform: translateY(-90px) rotateX(-250deg);
+        }
+      }
+      @keyframes slide-rotate-hor-top {
+        0% {
+          -webkit-transform: translateY(0) rotateX(0deg);
+                  transform: translateY(0) rotateX(0deg);
+        }
+        100% {
+          -webkit-transform: translateY(-90px) rotateX(-90deg);
+                  transform: translateY(-90px) rotateX(-90deg);
+        }
+      }
+
+    .background-menu-mobile{
+        background-color: white;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        flex-direction: column;
+        padding: 30px;
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+        transition: all .5s;
+        opacity: 2;
+    }
+    .Header-box > p{
+        display: none;
+    }
+    .img-menu-mobile-container img{
+        width: 35px;
+        height: 35px;
+    }
+    .img-menu-mobile-container{
+        display: flex;
+        justify-content: flex-end;
+
+    }
+    .Browser-container-contacts{
+        display: none;
+    }
+    .container-text-emblem{
+        display: none;
+    }
+    .container-social-networks-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .contacts-mobile-click{
+        left: 20px;
+        position: relative;
+    }
+    .container-network-mobile img{
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+    }
+    .container-contacts__menu-mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contacts-mobile-click{
+        -webkit-animation: slide-rotate-hor-top 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+        animation: slide-rotate-hor-top 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+    }
+
+
+    .container-network-mobile{
+        display: flex;
+        justify-content: flex-start;
+        margin:20px  0 0;
+        align-items: center;
+    }
+    .container-social-networks-mobile a{
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+    }
+    .container-text-emblem-mobile{
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .text-emblem-mobile{
+        font-size: 2rem;
+    }
+    .container-text-emblem-mobile h3{
+        font-family: 'Cedarville Cursive',cursive;
+    }
+    .Header-box .logo-image{
+        width: 202px;
+        height:110px;
+    }
+    .Header-box{
+        display: flex;
+        justify-content: space-around;
+        padding: 15px;
+    }
+    .icon-menu-d{
+        background-image: url(5bad88a4b8de85b4db41.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 35px;
+        height: 35px;
+    }
+    .icon-angle{
+        width: 65px;
+    }   
+    .container-img-principal img{
+        width: 300px;
+    }
+    .container-img-principal img{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .country-italy-peru img{
+        width: 321px;
+        height: 363px;
+        
+    }
+    .sections p{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .sections h1{
+        font-size:25px;
+    }
+    .container-message p{
+        font-size: 20px;
+    }
+
+    .container-footer{
+        border-top: 1px solid black;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,10px);
+        grid-template-rows: 20px 50px 30px;
+        gap: 15px;
+        padding: 30px;
+        margin: 0 auto;
+    }
+    .social-networks{
+        display: none;
+    }
+    .text-footer-networks{
+        display: none;
+    }
+    .address p{
+        font-size: 10px;
+    }
+    #HomeLink,#galleryLink,#noticeLink{
+        display: none;
+    }
+    .section-nav-speed {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin: 20px 0 20px;
+        gap: 20px;
+        
+    }
+    
+    .section-nav-speed  a{
+        display: flex;
+        justify-content: flex-start;
+        font-size: 20px;
+    }
+    .section-nav-speed > a{
+        letter-spacing: 2px;
+        text-decoration: none;
+        color: black;
+        position: relative;
+        padding-bottom: 10px;
+    }
+    .section-nav-speed> a:after{
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin-top: 10px;
+        height: 5px;
+        width: 100%;
+        background: dodgerblue;
+        /*animation from right to left*/
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform 0.2s ease-in-out;
+    }  
+    .section-nav-speed > a:hover:after{
+        color: #5c5a52;
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+    .section-nav-speed > a.home-open-mobile:after{
+        color: #5c5a52;
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+    .section-nav-speed > a.gallery-open-mobile:after{
+        color: #5c5a52;
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+    .section-nav-speed > a.notices-open-mobile:after{
+        color: #5c5a52;
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+    .container-indis img{
+        width: 100px;
+    }
+    .container-indis{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .container-footer{
+        padding: 10px;
+    }
+    .container-footer h6{
+        grid-column: 7;
+        grid-row:1;
+        font-size: 20px;
+    }
+    .container-footer .address{
+        grid-column-start: 7;
+        grid-column-end:14;
+        grid-row: 2;
+    }
+
+    .address p{
+        font-size: 11px;
+        margin-top: 5px;
+    }
+    .container-img-principal img{
+        width: 100%;
+    }
+    .country-italy-peru img{
+        width: 150%;
+    }
+    .container-footer .click-hand{
+        width: 40px;
+        height: 40px;
+        grid-row: 1;
+        grid-column: 12;
+    }  
+    .llama-img{
+        width: 8%;
+        position: fixed;
+        right: -14px;
+        bottom: 232px;
+    } 
+
+}
+

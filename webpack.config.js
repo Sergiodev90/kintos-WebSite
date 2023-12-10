@@ -7,11 +7,12 @@ module.exports = {
     main: './src/index.js',
     mobile: './styles/mobile.css',
     tablet: './styles/tablet.css',
-    styles: './styles/main.css' // Agregamos main.css como una entrada
+    gcss: './styles/main.css' // Agregamos main.css como una entrada
   },
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist')
+
   },
   module: {
     rules: [
