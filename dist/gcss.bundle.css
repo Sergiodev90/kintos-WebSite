@@ -1,14 +1,5 @@
-/*!*******************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./styles/main.css ***!
-  \*******************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap);
-/*!***********************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./styles/main.css (1) ***!
-  \***********************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Recursive:wght@600&display=swap);
-/*!***********************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./styles/main.css (2) ***!
-  \***********************************************************************/
 *{
     box-sizing: border-box;
     margin: 0;
