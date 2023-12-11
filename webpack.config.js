@@ -9,6 +9,11 @@ module.exports = {
     tablet: './styles/tablet.css',
     gcss: './styles/main.css' // Agregamos main.css como una entrada
   },
+  output: {
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist')
+
+  },
   module: {
     rules: [
       {
