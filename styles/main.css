@@ -37,6 +37,7 @@ body{
     to{
         font-size: 2rem;
     }
+
 }
 
 @keyframes shake{
@@ -47,6 +48,13 @@ body{
     100% { transform: rotate(0deg); }
 }
 
+@keyframes little-text{
+    from{
+
+    }to{
+
+    }
+}
 
 .Header-box{
     animation:enhance-header linear both;
@@ -56,6 +64,13 @@ body{
     animation-range:0 300px;
 }
 .text-emblem{
+    animation:enhance-header linear both;
+    view-timeline-name: --textnav;
+    animation-timeline: scroll(root);
+    animation-name: show-Text;
+    animation-range: 0 400px;
+}
+#HomeLink,#galleryLink{
     animation:enhance-header linear both;
     view-timeline-name: --textnav;
     animation-timeline: scroll(root);
@@ -177,13 +192,13 @@ body{
 
 .container-text-emblem h3 {
     margin-bottom: 0;
-    font-size: 4rem;
+    font-size: 2rem;
     font-family: 'Cedarville Cursive',cursive;
 }
 
 .container-text-emblem h2 {
     margin-top: 0;
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 .container-network{
