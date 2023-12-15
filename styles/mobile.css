@@ -164,7 +164,7 @@
     .address p{
         font-size: 10px;
     }
-    #HomeLink,#galleryLink,#noticeLink{
+    #HomeLink,#galleryLink{
         display: none;
     }
     .section-nav-speed {
