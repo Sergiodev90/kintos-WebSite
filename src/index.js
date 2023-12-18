@@ -46,7 +46,10 @@ document.querySelector('.popup-image span').addEventListener('click', () => {
 });
 
 
+
+
 document.addEventListener('DOMContentLoaded', function () {
+  window.addEventListener('keydown', test);
   const imageContainer = document.querySelector('.image-container');
   const popupImage = document.querySelector('.popup-image');
   const leftArrow = document.querySelector('.left-arrow');
@@ -57,6 +60,20 @@ document.addEventListener('DOMContentLoaded', function () {
   let currentIndex = 0;
   let images = Array.from(document.querySelectorAll('.image-container .image img'));
 
+  function test(event){
+    if(event.keyCode == '37' && currentIndex > 0){ // Tecla con la flecha hacia la izquierda y no estás en la primera imagen
+      navigateLeft();
+      updateArrowsVisibility();
+  }
+  if(event.keyCode == '39' && currentIndex < images.length - 1){ // Tecla con la flecha hacia la derecha y no estás en la última imagen
+      navigateRight();
+      updateArrowsVisibility();
+  }
+  if(event.keyCode == '27'){
+    document.querySelector('.popup-image').style.display = 'none';
+  }
+
+   }
   // Event listener para cada imagen
   images.forEach((image, index) => {
       image.addEventListener('click', () => {

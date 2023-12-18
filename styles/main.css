@@ -563,7 +563,7 @@ main p{
 }
 #galleryContainer{
 
-
+    border-radius: 10px ;
     padding:20px 16px;
     margin:0 auto !important;
     max-width: 1203px;
