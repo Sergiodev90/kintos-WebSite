@@ -46,6 +46,70 @@ document.querySelector('.popup-image span').addEventListener('click', () => {
 });
 
 
+document.addEventListener('DOMContentLoaded', function () {
+  const imageContainer = document.querySelector('.image-container');
+  const popupImage = document.querySelector('.popup-image');
+  const leftArrow = document.querySelector('.left-arrow');
+  const rightArrow = document.querySelector('.right-arrow');
+  const closeButton = document.querySelector('.popup-image span');
+  const popupImageElement = document.querySelector('.popup-image img');
+
+  let currentIndex = 0;
+  let images = Array.from(document.querySelectorAll('.image-container .image img'));
+
+  // Event listener para cada imagen
+  images.forEach((image, index) => {
+      image.addEventListener('click', () => {
+          currentIndex = index;
+          updatePopupImage();
+          showPopup();
+          updateArrowsVisibility();
+      });
+  });
+
+  // Event listener para el botón de cerrar
+  closeButton.addEventListener('click', hidePopup);
+
+  // Event listener para la flecha izquierda
+  leftArrow.addEventListener('click', () => {
+      navigateLeft();
+      updateArrowsVisibility();
+  });
+
+  // Event listener para la flecha derecha
+  rightArrow.addEventListener('click', () => {
+      navigateRight();
+      updateArrowsVisibility();
+  });
+
+  function showPopup() {
+      popupImage.style.display = 'block';
+  }
+
+  function hidePopup() {
+      popupImage.style.display = 'none';
+  }
+
+  function navigateLeft() {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      updatePopupImage();
+  }
+
+  function navigateRight() {
+      currentIndex = (currentIndex + 1) % images.length;
+      updatePopupImage();
+  }
+
+  function updatePopupImage() {
+      popupImageElement.src = images[currentIndex].src;
+  }
+
+  function updateArrowsVisibility() {
+      leftArrow.style.display = currentIndex === 0 ? 'none' : 'block';
+      rightArrow.style.display = currentIndex === images.length - 1 ? 'none' : 'block';
+  }
+});
+
 // Función para abrir y cerrar la sección de la galería
 // Función para abrir y cerrar la sección de la galería
 // function toggleSections() {

@@ -569,6 +569,27 @@ main p{
     max-width: 1203px;
 }
 
+.container .popup-image .nav-arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 36px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.container .popup-image .left-arrow {
+    left: 10px;
+}
+
+.container .popup-image .right-arrow {
+    right: 10px;
+}
+
 @media (max-width:768px){
     .container .popup-image img{
         width: 95%;
