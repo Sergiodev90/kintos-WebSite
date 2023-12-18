@@ -5,6 +5,8 @@ const icon_menu_aside = document.querySelector(".icon-menu-mobile")
 const background_mobile_gray = document.querySelector(".background-menu-mobile-Father")
 const contacts__Mobile = document.querySelector(".contacts-mobile-click ")
 const arrow_down = document.querySelector(".icon-menu-contacts")
+const mediaqueryList = window.matchMedia("(min-width: 1267px)");
+
 
 icon_menu.addEventListener("click",ShowAside)
 icon_menu_aside.addEventListener("click",toggleAside)
@@ -30,6 +32,19 @@ function toggleAside(){
 function ShowContacts(){
   contacts__Mobile.classList.toggle("inactive")
 }
+
+
+document.querySelectorAll('.image-container .image img').forEach(image => {
+  image.addEventListener('click', () => {
+      document.querySelector(".popup-image").style.display = 'block';
+      document.querySelector(".popup-image img").src = image.getAttribute("src");
+  });
+});
+
+document.querySelector('.popup-image span').addEventListener('click', () => {
+  document.querySelector('.popup-image').style.display = 'none';
+});
+
 
 // Función para abrir y cerrar la sección de la galería
 // Función para abrir y cerrar la sección de la galería

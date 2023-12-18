@@ -18,10 +18,10 @@ body{
     background-repeat: no-repeat;
     background-image: url(../assets/Images/machupichu.webp);
 }
-.notices-body,.gallery-body{
+/* .notices-body,.gallery-body{
     background-image: none;
     background-color:white;
-}
+} */
 @keyframes show{
     from{
         height: 135px;
@@ -50,9 +50,10 @@ body{
 
 @keyframes little-text{
     from{
-
-    }to{
-
+        font-size: 25px;
+    }
+    to{
+        font-size:20px ;
     }
 }
 
@@ -74,13 +75,12 @@ body{
     animation:enhance-header linear both;
     view-timeline-name: --textnav;
     animation-timeline: scroll(root);
-    animation-name: show-Text;
+    animation-name: little-text;
     animation-range: 0 400px;
 }
-
 .Browser-container{
     top: -1px;
-    z-index: 1000;
+    z-index: 100;
     position: sticky;
     width: 100%;
 }
@@ -109,7 +109,7 @@ body{
 .Header-box{
     display: flex;
     justify-content: center;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: white;
     height: 135px;
@@ -489,4 +489,89 @@ main p{
 }
 .loader span:nth-child(3){
     animation-delay: 0.25s;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.container .image-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+    justify-content: center;
+    padding: 10px;
+}
+.container .image-container .image{
+    height: 250px;
+    width: 350px;
+    border: 10px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0, 0, 1);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.container .image-container .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+
+.container .image-container .image:hover img{
+    transform: scale(1.1);
+}
+
+.container .popup-image{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(3,9,30,.7);
+    height: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.container .popup-image span{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color:#fff;
+    cursor: pointer;
+    z-index:100;
+}
+.container .popup-image img{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    border: 5px solid #fff;
+    border-radius:5px ;
+    width: 750px;
+    object-fit: cover;
+}
+#galleryContainer{
+
+
+    padding:20px 16px;
+    margin:0 auto !important;
+    max-width: 1203px;
+}
+
+@media (max-width:768px){
+    .container .popup-image img{
+        width: 95%;
+
+    }
 }
