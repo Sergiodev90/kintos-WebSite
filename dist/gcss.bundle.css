@@ -14,10 +14,13 @@ html{
 }
 body{
     background-size: cover;
-    background-position: center;
+    background-position: center 50px;
     background-repeat: no-repeat;
     background-image: url(75215594ca1a0962b2af.webp);
+    background-attachment: fixed;
+    margin: 0;
 }
+
 /* .notices-body,.gallery-body{
     background-image: none;
     background-color:white;
@@ -269,6 +272,7 @@ main p{
     width: 60%;
     margin-top: 50px;
     margin-bottom: 50px;
+    image-rendering: optimizeQuality;
 }
 .country-italy-peru img{
     width: 1040.141px;
@@ -563,7 +567,7 @@ main p{
 }
 #galleryContainer{
 
-    border-radius: 10px ;
+    border-radius: 10px;
     padding:20px 16px;
     margin:0 auto !important;
     max-width: 1203px;
