@@ -6,7 +6,7 @@ const background_mobile_gray = document.querySelector(".background-menu-mobile-F
 const contacts__Mobile = document.querySelector(".contacts-mobile-click ")
 const arrow_down = document.querySelector(".icon-menu-contacts")
 const mediaqueryList = window.matchMedia("(min-width: 1267px)");
-
+const seccionesOcultas = document.querySelectorAll(".hidden")
 
 icon_menu.addEventListener("click",ShowAside)
 icon_menu_aside.addEventListener("click",toggleAside)
@@ -143,3 +143,25 @@ document.addEventListener('DOMContentLoaded', function () {
 //   NoticesLink.classList.toggle("noticesLink");
 //   body.classList.toggle("noticesLink");
 // }
+
+const sections = document.querySelectorAll('.sections');
+
+const cargarSecciones = (entradas, observador) => {
+    entradas.forEach((entrada) => {
+        if (entrada.isIntersecting) {
+            entrada.target.classList.add('visible');
+        } else {
+            // entrada.target.classList.remove('visible'); // Puedes descomentar esta línea si deseas que las secciones desaparezcan al salir del viewport
+        }
+    });
+};
+
+const observadorSecciones = new IntersectionObserver(cargarSecciones, {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1 // Puedes ajustar el valor según tus preferencias
+});
+
+sections.forEach((section) => {
+    observadorSecciones.observe(section);
+});

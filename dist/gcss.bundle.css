@@ -277,6 +277,17 @@ main p{
     width: 1040.141px;
     height: 600.344px;
 }
+.sections {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.sections.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .sections h1{
     font-size: 40px;
     font-family: 'Cedarville Cursive',cursive;
