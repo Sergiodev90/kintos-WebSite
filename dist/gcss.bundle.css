@@ -14,11 +14,10 @@ html{
 }
 body{
     background-size: cover;
-    background-position: center 50px;
+    background-position: center 0px;
     background-repeat: no-repeat;
     background-image: url(75215594ca1a0962b2af.webp);
     background-attachment: fixed;
-    margin: 0;
 }
 
 /* .notices-body,.gallery-body{
